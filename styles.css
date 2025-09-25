@@ -54,6 +54,11 @@ li .left {
   gap: 8px;
 }
 
+li.checked span {
+  text-decoration: line-through;
+  color: #999;
+}
+
 button {
   border: none;
   background: #dbb99d;
@@ -86,6 +91,7 @@ input {
     padding: 10px;
   }
 }
+
 #clearListBtn {
   display: block;
   margin-bottom: 10px;
@@ -95,4 +101,45 @@ input {
 
 #clearListBtn:hover {
   background: #d32f2f;
+}
+
+/* Botones flotantes */
+.scroll-btn {
+  position: fixed;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: none;
+  background: #dbb99d;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  transition: background 0.3s;
+}
+
+.scroll-btn:hover {
+  background: #caa184;
+}
+
+#scrollTopBtn {
+  bottom: 80px;
+}
+
+#scrollShoppingBtn {
+  bottom: 20px;
+}
+
+/* Corregir checklist de faltantes */
+#shoppingList li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+#shoppingList li .left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }

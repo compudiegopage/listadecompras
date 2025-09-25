@@ -10,25 +10,26 @@
   <div class="app">
     <h1>🛒 Lista de Compras</h1>
 
-    <!-- Input para agregar productos -->
     <div class="add-product">
       <input type="text" id="newProduct" placeholder="Agregar producto...">
       <button id="addBtn">➕</button>
     </div>
 
-    <!-- Productos disponibles -->
     <div class="section">
       <h2>Productos disponibles</h2>
       <ul id="productList"></ul>
     </div>
 
-    <!-- Lista de compras -->
-<div class="section">
-  <h2>Mis faltantes</h2>
-  <button id="clearListBtn">🧹 Vaciar lista</button>
-  <ul id="shoppingList"></ul>
-</div>
+    <div class="section">
+      <h2>Mis faltantes</h2>
+      <button id="clearListBtn">🧹 Vaciar lista</button>
+      <ul id="shoppingList"></ul>
+    </div>
+  </div>
 
+  <!-- Botones flotantes -->
+  <button id="scrollTopBtn" class="scroll-btn">⬆️</button>
+  <button id="scrollShoppingBtn" class="scroll-btn">🛒</button>
 
   <script src="script.js"></script>
 </body>
