@@ -9,7 +9,7 @@ const clearListBtn = document.getElementById("clearListBtn");
 
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const scrollShoppingBtn = document.getElementById("scrollShoppingBtn");
-const shoppingSection = document.querySelector(".section:nth-of-type(2)");
+const shoppingSection = document.getElementById("shoppingSection");
 
 function saveData() {
   localStorage.setItem("products", JSON.stringify(products));
